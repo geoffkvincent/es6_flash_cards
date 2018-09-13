@@ -3,36 +3,46 @@ $(document).ready( function() {
   
 });
 
-const q1 = document.getElementById('q1')
-var q_create = document.getElementById('q_create')
-var a_create = document.getElementById('a_create')
-var q_button = document.getElementById('q_button')
-var a_button = document.getElementById('a_button')
-var q_result = document.getElementById('q_result')
-var a_result = document.getElementById('a_result')    
-var question = ''
-var answer = '' 
 
+const q_create = document.getElementById('q_create')
+const a_create = document.getElementById('a_create')
+const create_button = document.getElementById('create_button')
+const q_result = document.getElementById('q_result')
+const a_result = document.getElementById('a_result') 
+const show_answer_button = document.getElementById('show_answer_button')   
+let question = ''
+let answer = '' 
+let card =[]
 
-q_button.addEventListener('click', function () {
+create_button.addEventListener('click',function () {
   question = q_create.value
-   q_result.innerHTML = question 
-   q_create.value = ''
-})
-
-a_button.addEventListener('click', function () {
   answer = a_create.value
-   
-   a_create.value = ''
+  q_result.innerHTML = question
+  q_create.value = ''
+  a_create.value = ''
 })
 
-card.addEventListener('click', function () {
-  q_result.innerHtml = answer
+show_answer_button.addEventListener('click', function() {
+  a_result.innerHTML = answer
 })
 
 
-
-
-// q1.addEventListener('click', function() {
-//   q1.innerHTML = 'answer 1'
+// q_button.addEventListener('click', function () {
+//   question = q_create.value
+//    q_result.innerHTML = question 
+//    q_create.value = ''
 // })
+
+// a_button.addEventListener('click', function () {
+//   answer = a_create.value
+   
+//    a_create.value = ''
+// })
+
+// card.addEventListener('click', function () {
+//   q_result.innerHtml = answer
+// })
+
+
+
+

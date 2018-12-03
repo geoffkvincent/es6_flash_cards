@@ -25,24 +25,42 @@ create_button.addEventListener('click',function () {
   a_create.value = ''
 })
 
-// prev.addEventListener('click', function() {
-//   card.forEach(function (c){
-//     return c
-//   })
-// })
-
-var questionNum = -1;
-var numCorrect = 0;
-
-function loadQuestion() {
-    ++questionNum;
-    if (questionNum >= card.length) {
-        alert("all questions are done");
-    } else {
-        document.getElementById("q_result").innerHTML = card[questionNum];
-        document.getElementById("answer").value = "";
-    }
+function load_card (card) {
+  card.map(function(c) {
+    return c.question
+  })
 }
+
+prev.addEventListener('click', function() {
+  let load_q = card.map(function (c){
+    return c.question
+  })
+  return load_q
+})
+
+// var questionNum = -1;
+// var numCorrect = 0;
+
+// function loadQuestion() {
+//     ++questionNum;
+//     if (questionNum >= card.length) {
+//         alert("all questions are done");
+//     } else {
+//         document.getElementById("q_result").innerHTML = card[questionNum];
+//         document.getElementById("answer").value = "";
+//     }
+// }
+
+// function checkAnswer() {
+//   var answer = document.getElementById("a_result").value.toLowerCase();
+//   var allowedAnswers = cArray[questionNum];
+//   for (var i = 0; i < allowedAnswers.length; i++) {
+//       if (allowedAnswers[i].toLowerCase() == answer) {
+//           return true;
+//       }
+//   }
+//   return false;
+// }
 
 next.addEventListener('click', function() {
   loadQuestion

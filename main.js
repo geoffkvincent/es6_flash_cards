@@ -42,8 +42,6 @@ create_button.addEventListener('click',function () {
   a_create.value = ''
 })
 
-
-
 show_answer_button.addEventListener('click', function() {
   a_result.innerHTML = answer
 })

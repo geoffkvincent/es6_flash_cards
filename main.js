@@ -15,16 +15,6 @@ let card =[]
 //   return card.push(question, answer)
 // }
 
-create_button.addEventListener('click',function () {
-  question = q_create.value
-  answer = a_create.value
-  let new_card = {question:  question, answer: answer}
-  card.push(new_card)
-  q_result.innerHTML = question
-  q_create.value = ''
-  a_create.value = ''
-})
-
 function load_card (card) {
   card.map(function(c) {
     return c.question
@@ -39,8 +29,20 @@ prev.addEventListener('click', function() {
 })
 
 next.addEventListener('click', function() {
-  loadQuestion
+  load_card
 })
+
+create_button.addEventListener('click',function () {
+  question = q_create.value
+  answer = a_create.value
+  let new_card = {question: question, answer: answer}
+  card.push(new_card)
+  q_result.innerHTML = question
+  q_create.value = ''
+  a_create.value = ''
+})
+
+
 
 show_answer_button.addEventListener('click', function() {
   a_result.innerHTML = answer

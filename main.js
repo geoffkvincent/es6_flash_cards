@@ -38,14 +38,6 @@ prev.addEventListener('click', function() {
   return load_q
 })
 
-// var questionNum = -1;
-// var numCorrect = 0;
-
-// function loadQuestion() {
-//     ++questionNum;
-//     if (questionNum >= card.length) {
-
-
 next.addEventListener('click', function() {
   loadQuestion
 })

@@ -26,6 +26,12 @@ create_button.addEventListener('click',function () {
 })
 
 prev.addEventListener('click', function() {
+  card.forEach(function (){
+    
+  })
+})
+
+prev.addEventListener('click', function() {
   
 })
 

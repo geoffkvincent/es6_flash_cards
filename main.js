@@ -25,14 +25,27 @@ create_button.addEventListener('click',function () {
   a_create.value = ''
 })
 
-prev.addEventListener('click', function() {
-  card.forEach(function (){
-    
-  })
-})
+// prev.addEventListener('click', function() {
+//   card.forEach(function (c){
+//     return c
+//   })
+// })
 
-prev.addEventListener('click', function() {
-  
+var questionNum = -1;
+var numCorrect = 0;
+
+function loadQuestion() {
+    ++questionNum;
+    if (questionNum >= card.length) {
+        alert("all questions are done");
+    } else {
+        document.getElementById("q_result").innerHTML = card[questionNum];
+        document.getElementById("answer").value = "";
+    }
+}
+
+next.addEventListener('click', function() {
+  loadQuestion
 })
 
 show_answer_button.addEventListener('click', function() {

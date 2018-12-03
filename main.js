@@ -22,10 +22,7 @@ function load_card (card) {
 }
 
 prev.addEventListener('click', function() {
-  let load_q = card.map(function (c){
-    return c.question
-  })
-  return load_q
+  
 })
 
 next.addEventListener('click', function() {

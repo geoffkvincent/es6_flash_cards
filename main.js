@@ -44,13 +44,6 @@ prev.addEventListener('click', function() {
 // function loadQuestion() {
 //     ++questionNum;
 //     if (questionNum >= card.length) {
-//         alert("all questions are done");
-//     } else {
-//         document.getElementById("q_result").innerHTML = card[questionNum];
-//         document.getElementById("answer").value = "";
-//     }
-// }
-
 
 
 next.addEventListener('click', function() {

@@ -51,16 +51,7 @@ prev.addEventListener('click', function() {
 //     }
 // }
 
-// function checkAnswer() {
-//   var answer = document.getElementById("a_result").value.toLowerCase();
-//   var allowedAnswers = cArray[questionNum];
-//   for (var i = 0; i < allowedAnswers.length; i++) {
-//       if (allowedAnswers[i].toLowerCase() == answer) {
-//           return true;
-//       }
-//   }
-//   return false;
-// }
+
 
 next.addEventListener('click', function() {
   loadQuestion

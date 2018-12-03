@@ -5,6 +5,7 @@ const q_result = document.getElementById('q_result')
 const a_result = document.getElementById('a_result') 
 const show_answer_button = document.getElementById('show_answer_button') 
 const hide_answer_button = document.getElementById('hide_answer_button')     
+const prev = document.getElementById('prev')
 let question = ''
 let answer = '' 
 let card =[]

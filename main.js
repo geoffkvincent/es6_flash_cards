@@ -25,6 +25,10 @@ create_button.addEventListener('click',function () {
   a_create.value = ''
 })
 
+prev.addEventListener('click', function() {
+  
+})
+
 show_answer_button.addEventListener('click', function() {
   a_result.innerHTML = answer
 })

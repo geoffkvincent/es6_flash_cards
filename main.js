@@ -11,6 +11,7 @@ let question = ''
 let answer = '' 
 let card =[]
 
+
 // const add_card = (question, answer) => {
 //   return card.push(question, answer)
 // }

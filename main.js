@@ -14,7 +14,7 @@ let cards =[]
 function load_card (cards) {
   debugger
   cards.map(function(c) {
-    return c.question
+    
   })
 }
 
@@ -22,9 +22,9 @@ prev.addEventListener('click', function() {
   
 })
 
-next.addEventListener('click', function() {
+next.addEventListener('click', function(cards) {
   debugger
-  load_card()
+  load_card(cards)
 })
 
 create_button.addEventListener('click',function () {

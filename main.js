@@ -10,18 +10,18 @@ const next = document.getElementById('next')
 let question = ''
 let answer = '' 
 let cards =[]
+let currentIndex = 0
 
+load_card = (cards) => {
+
+}
 
 prev.addEventListener('click', function() {
   
 })
 
 next.addEventListener('click', function() {
-  load_card = (cards) => {
-    debugger
-    console.log(cards)
-  }
-
+  load_card(cards)
 })
 
 create_button.addEventListener('click',function () {
@@ -29,7 +29,6 @@ create_button.addEventListener('click',function () {
   answer = a_create.value
   let card = {question: question, answer: answer}
   cards.push(card)
-  debugger
   q_result.innerHTML = question
   q_create.value = ''
   a_create.value = ''

@@ -13,9 +13,8 @@ let cards =[]
 
 function load_card (cards) {
   debugger
-  cards.map(function(c) {
+  console.log(cards)
     
-  })
 }
 
 prev.addEventListener('click', function() {

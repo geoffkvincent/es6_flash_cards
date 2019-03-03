@@ -13,7 +13,7 @@ let cards =[]
 let currentIndex = 0
 
 function increaseIndex() {
-  if(currentIndex >= cardArray.length - 1) {
+  if(currentIndex >= cards.length - 1) {
       currentIndex = 0;
   } else {
       currentIndex++;
@@ -23,12 +23,28 @@ function increaseIndex() {
 
 function decreaseIndex() {
   if(currentIndex <= 0) {
-      currentIndex = cardArray.length - 1;
+      currentIndex = cards.length - 1;
   } else {
       currentIndex--;
   }
   displayCards();
 }
+
+// const displayCards = () => {
+//   console.log(currentIndex);
+//   cardContainer.innerHTML = ""; 
+//   console.log(cardArray); 
+//   let currentCard = cardArray[currentIndex];
+//   cardContainer.innerHTML = 
+//       `<div class = "card">
+//           <div class="card-face card-face-front">
+//               <h3>${currentCard.front}</h3>
+//               <i class="fas fa-edit edit-card"></i>
+//           </div>
+//           <div class="card-face card-face-back">
+//               <h3>${currentCard.back}</h3>
+//           </div>
+//       </div>`
 
 prev.addEventListener('click', function() {
   decreaseIndex()

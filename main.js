@@ -31,11 +31,11 @@ function decreaseIndex() {
 }
 
 prev.addEventListener('click', function() {
-  
+  decreaseIndex()
 })
 
 next.addEventListener('click', function() {
-  load_card(cards)
+  increaseIndex()
 })
 
 create_button.addEventListener('click',function () {

@@ -11,8 +11,9 @@ let question = ''
 let answer = '' 
 let cards =[]
 
-function load_card (card) {
-  card.map(function(c) {
+function load_card (cards) {
+  debugger
+  cards.map(function(c) {
     return c.question
   })
 }
@@ -22,7 +23,8 @@ prev.addEventListener('click', function() {
 })
 
 next.addEventListener('click', function() {
-  load_card
+  debugger
+  load_card()
 })
 
 create_button.addEventListener('click',function () {

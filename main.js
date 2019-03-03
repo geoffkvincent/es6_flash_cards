@@ -9,7 +9,7 @@ const prev = document.getElementById('prev')
 const next = document.getElementById('next')
 let question = ''
 let answer = '' 
-let card =[]
+let cards =[]
 
 
 // const add_card = (question, answer) => {
@@ -34,7 +34,7 @@ create_button.addEventListener('click',function () {
   question = q_create.value
   answer = a_create.value
   let new_card = {question: question, answer: answer}
-  card.push(new_card)
+  cards.push(new_card)
   q_result.innerHTML = question
   q_create.value = ''
   a_create.value = ''

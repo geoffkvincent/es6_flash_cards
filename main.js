@@ -28,9 +28,8 @@ next.addEventListener('click', function() {
 create_button.addEventListener('click',function () {
   question = q_create.value
   answer = a_create.value
-  card = { question: answer }
-  let new_card = {question: question, answer: answer}
-  cards.push(new_card)
+  let card = {question: question, answer: answer}
+  cards.push(card)
   q_result.innerHTML = question
   q_create.value = ''
   a_create.value = ''

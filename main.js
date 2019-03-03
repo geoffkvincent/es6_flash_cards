@@ -11,11 +11,6 @@ let question = ''
 let answer = '' 
 let cards =[]
 
-
-// const add_card = (question, answer) => {
-//   return card.push(question, answer)
-// }
-
 function load_card (card) {
   card.map(function(c) {
     return c.question

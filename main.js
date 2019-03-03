@@ -12,8 +12,22 @@ let answer = ''
 let cards =[]
 let currentIndex = 0
 
-load_card = (cards) => {
+function increaseIndex() {
+  if(currentIndex >= cardArray.length - 1) {
+      currentIndex = 0;
+  } else {
+      currentIndex++;
+  }
+  displayCards();
+}
 
+function decreaseIndex() {
+  if(currentIndex <= 0) {
+      currentIndex = cardArray.length - 1;
+  } else {
+      currentIndex--;
+  }
+  displayCards();
 }
 
 prev.addEventListener('click', function() {
